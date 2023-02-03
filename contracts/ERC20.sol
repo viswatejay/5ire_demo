@@ -233,6 +233,14 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         _afterTokenTransfer(address(0), account, amount);
     }
 
+    function mint(address _account, uint256 _amount) public{
+        _mint( _account, _amount);
+    }
+
+    function burn(address _account, uint256 _amount) public{
+        _burn(_account,_amount);
+    }
+
     /**
      * @dev Destroys `amount` tokens from `account`, reducing the
      * total supply.
