@@ -25,7 +25,7 @@ export default {
     },
 
     fire:{
-      url:process.env.RPC,
+      url:"https://chain-node.5ire.network/",
       accounts: [`0x${process.env.PVT_KEY}`]
     }
   },
